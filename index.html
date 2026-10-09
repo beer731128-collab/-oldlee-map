@@ -16,7 +16,7 @@
 <body>
 <header>
   <h1>高雄建案地圖</h1>
-  <p>資料來源：data/projects.json（改這個檔案，網站就會跟著變）</p>
+  <p>資料來源：projects.json（改這個檔案，網站就會跟著變）</p>
 </header>
 <div id="map"></div>
 
@@ -29,7 +29,7 @@
   }).addTo(map);
 
   // 讀取資料檔，每個建案放一個標記
-  fetch('data/projects.json')
+  fetch('projects.json')
     .then(r => r.json())
     .then(list => {
       list.forEach(p => {
